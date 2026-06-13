@@ -30,6 +30,12 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route('all.books') }}">Browse</a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('pricing') }}">Pricing</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('about') }}">About Us</a>
+    </li>
 
     @guest
         {{-- Guest: Login & Sign Up --}}
@@ -108,7 +114,8 @@
         <div class="col-lg-2 col-md-4 mb-4">
           <div class="footer-links">
             <h5>Company</h5>
-            <a href="#">About Us</a>
+            <a href="{{ route('about') }}">About Us</a>
+            <a href="{{ route('pricing') }}">Pricing</a>
             <a href="#">Blog</a>
             <a href="#">Careers</a>
             <a href="#">Contact</a>

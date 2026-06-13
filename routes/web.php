@@ -13,6 +13,9 @@ Route::controller(BookController::class)->group(function() {
     Route::get('/browse', 'browse')->name('browse'); // Fixed syntax
 });
 
+Route::view('/pricing', 'bookhive.pricing')->name('pricing');
+Route::view('/about', 'bookhive.about')->name('about');
+
 // Authenticated user routes
 Route::middleware('auth')->group(function () {
     // Book management routes
